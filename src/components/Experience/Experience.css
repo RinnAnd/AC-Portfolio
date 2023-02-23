@@ -25,7 +25,8 @@
 @media screen and (max-width: 1354px) {
     .center_box_exp {
         flex-direction: column;
-    }    
+        gap: 4rem;
+    } 
 }
 
 @media screen and (max-width: 682px) {
