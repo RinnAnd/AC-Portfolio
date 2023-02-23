@@ -80,7 +80,13 @@
 
 @media screen and (max-width: 682px) {
   .menu {
-    width: 290px;
-    right: 0rem;
+    width: 250px;
+    right: -1rem;
+  }
+  .project_box {
+    width: 100%;
+  }
+  .information {
+    width: 70%;
   }
 }
