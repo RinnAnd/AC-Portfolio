@@ -1,0 +1,9 @@
+#logos {
+    width: 1.3rem;
+}
+
+#logos:hover path:nth-child(1) {
+    fill: rgb(182, 136, 224);
+    transform: translateY(-0.4rem);
+    transition: 0.3s;
+}

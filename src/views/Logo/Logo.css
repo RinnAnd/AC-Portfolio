@@ -1,0 +1,56 @@
+.logo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 100;
+  }
+  
+  #logo {
+    width: 4rem;
+    animation: disappear 1s 2.8s;
+    animation-fill-mode: forwards;
+  }
+  
+  #logo path:nth-child(1) {
+    fill: transparent;
+    animation: letters 2s 2.3s;
+    animation-fill-mode: forwards;
+  }
+  
+  #logo path:nth-child(2) {
+    stroke-dasharray: 330px;
+    stroke-dashoffset: 330px;
+    animation: fillin 2s .3s ease forwards;
+    animation-fill-mode: forwards;
+  }
+  
+  @keyframes fillin {
+    0% {
+      stroke-dashoffset: 330px;
+    }
+    100% {
+      stroke-dashoffset: 0;
+    }
+  }
+  
+  @keyframes letters {
+    0% {
+      fill: transparent;
+    }
+    100% {
+      fill: white;
+    }
+  }
+  
+  @keyframes disappear {
+    0% {
+      width: 4rem;
+    }
+    90% {
+      width: 6rem;
+    }
+    100% {
+      width: 0;
+    }
+  }

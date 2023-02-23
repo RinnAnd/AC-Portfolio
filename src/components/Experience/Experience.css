@@ -1,0 +1,35 @@
+#experience {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 15rem;
+  padding: 8rem 4rem 8rem 4rem;
+  margin-bottom: 10rem;
+}
+
+.exp_intro {
+    align-self: flex-start;
+    font-family: "Lobster Two", cursive;
+    color: rgb(182, 136, 224);
+}
+
+.center_box_exp {
+    display: flex;
+    gap: 1rem;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+}
+
+@media screen and (max-width: 1354px) {
+    .center_box_exp {
+        flex-direction: column;
+    }    
+}
+
+@media screen and (max-width: 682px) {
+    #experience {
+        padding: 8rem 0 8rem 0;
+    }
+  }
