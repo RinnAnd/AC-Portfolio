@@ -18,7 +18,7 @@ const projects = [
   },
   {
     name: "Meals App",
-    demonstration: "url",
+    demonstration: "https://meals-app-indol.vercel.app",
     code: "https://github.com/RinnAnd/MealsApp",
     description: "Web app for meal recipes classification built on React using the context API, this one allows to find recipes by name or even to find a random recipe, all of this using fetch functions connected to a recipe API",
   },
