@@ -54,17 +54,18 @@
 
 .fadein-enter {
   opacity: 0;
-  transform: translateY(-2rem);
+  transform: translateY(-4rem);
 }
 
 .fadein-enter-active {
   opacity: 1;
   transform: translateY(0);
-  transition: transform 500ms, opacity 1000ms;
+  transition: transform 100ms, opacity 200ms;
 }
 
 .fadein-enter-done {
   opacity: 1;
+  transform: translate(0);
 }
 
 /* RESPONSIVENESS CONFIG */

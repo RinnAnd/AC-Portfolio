@@ -5,6 +5,7 @@ import { CSSTransition } from "react-transition-group";
 import { useNavigate } from "react-router-dom";
 import { RiMenu3Line, RiCloseLine } from "react-icons/ri";
 import resume from '../../assets/Andrés Casas CV.pdf'
+import useTimeout from "../../Hooks/useTimeout";
 
 const NavMenu = () => {
   return (
@@ -27,14 +28,14 @@ const Header = () => {
   const [enter, setEnter] = useState(false);
   const [toggle, setToggle] = useState(false);
 
-  useEffect(() => {
-    setEnter(true);
-  }, []);
+  useEffect(()=>{
+    setEnter(true)
+  },[])
 
-  return (
+  return (    
     <div className="header_box">
       <nav className="nav_bar">
-        <CSSTransition in={enter} timeout={5000} classNames="fadein">
+        <CSSTransition in={enter} timeout={1100} classNames="fadein">
           <img
             className="logo_img"
             style={{ transitionDelay: "100ms" }}
@@ -43,27 +44,27 @@ const Header = () => {
           />
         </CSSTransition>
         <div className="links_box">
-          <CSSTransition in={enter} timeout={5000} classNames="fadein">
+          <CSSTransition in={enter} timeout={1200} classNames="fadein">
             <a href='#about' className="links" style={{ transitionDelay: "200ms" }}>
               about;
             </a>
           </CSSTransition>
-          <CSSTransition in={enter} timeout={5000} classNames="fadein">
+          <CSSTransition in={enter} timeout={1300} classNames="fadein">
             <a href='#experience' className="links" style={{ transitionDelay: "300ms" }}>
               experience;
             </a>
           </CSSTransition>
-          <CSSTransition in={enter} timeout={5000} classNames="fadein">
+          <CSSTransition in={enter} timeout={1400} classNames="fadein">
             <a href='#contact' className="links" style={{ transitionDelay: "400ms" }}>
               contact;
             </a>
           </CSSTransition>
-          <CSSTransition in={enter} timeout={5000} classNames="fadein">
+          <CSSTransition in={enter} timeout={1500} classNames="fadein">
             <a className="cv_link" href={resume} download='AC-CV' style={{ transitionDelay: "500ms" }}>
               myCV;
             </a>
           </CSSTransition>
-          <CSSTransition in={enter} timeout={5000} classNames="fadein">
+          <CSSTransition in={enter} timeout={1200} classNames="fadein">
             <div className="nav_menu" style={{ transitionDelay: "200ms" }}>
               {toggle ? (
                 <RiCloseLine
