@@ -4,7 +4,7 @@ import redux from "../../assets/Redux_Logo.png";
 import node from "../../assets/Node_Logo.png";
 import typescript from "../../assets/TS_Logo.png";
 import mui from "../../assets/MUI_logo.png";
-import socket from "../../assets/socket_logo.png";
+import socket from "../../assets/Socket_logo.png";
 
 const Home = () => {
   return (
