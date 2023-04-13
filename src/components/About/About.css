@@ -23,6 +23,10 @@ p {
     color: var(--basegray);
 }
 
+span {
+    color: var(--text);
+}
+
 @media screen and (max-width: 900px) {
     #about {
         flex-direction: column;
@@ -30,5 +34,8 @@ p {
     }
     .about_main {
         flex-direction: column;
+    }
+    .about_text {
+        max-width: 30rem;
     }
 }

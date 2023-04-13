@@ -1,9 +1,21 @@
 .header_main {
-    padding: 1rem;
+    padding: 2rem;
     position: sticky;
     z-index: 5;
     top: 0px;
     background-color: var(--main);
+    box-shadow:  -1px -4px 17px 0px rgb(23, 23, 23);
+}
+
+#logo {
+    transition: 0.3s;
+}
+
+#logo:hover :nth-child(1) {
+    fill: rgb(161, 70, 253)
+}
+#logo:hover :nth-child(2) {
+    stroke: rgb(161, 70, 253)
 }
 
 .header_nav {
@@ -16,6 +28,10 @@
 .refs {
     display: flex;
     gap: 1.4rem;
+}
+
+.refs {
+    cursor: pointer;
 }
 
 a {

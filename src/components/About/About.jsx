@@ -9,11 +9,11 @@ const About = () => {
           <img src={coder} alt="" width={400} />
         </div>
         <div className="about_text">
-          <span>{"<About me />"}</span>
+          <span>{"<AboutMe />"}</span>
           <h1>A dedicated developer based in Medellín, Colombia</h1>
           <p>
             I possess an impressive arsenal of skills that allow me to build web
-            applications and parttake throughout the whole process, knowing how
+            applications and partake throughout the whole process, knowing how
             to build from the backend all the way to the frontend. I'm a team
             player that excels on delivering my tasks in record times and great
             quality, from the clean code to the look of the product.

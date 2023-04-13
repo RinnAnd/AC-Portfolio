@@ -15,6 +15,7 @@
   -webkit-text-size-adjust: 100%;
   --main: #1A0B2E;
   --basegray: rgb(129, 129, 129);
+  --text: #B46CF8;
 }
 
 body {
