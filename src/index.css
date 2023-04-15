@@ -50,6 +50,12 @@ body {
   backdrop-filter: blur(130px);
 }
 
+@media screen and (max-width: 900px) {
+  #blob {
+    display: none;
+  }
+}
+
 @keyframes rotate {
   from {
     rotate: 0deg;

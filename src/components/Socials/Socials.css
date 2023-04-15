@@ -27,6 +27,12 @@
     bottom: -182rem;
 }
 
+@media screen and (max-width: 900px) {
+    .blob2 {
+        display: none;
+    }
+}
+
 @keyframes shapeing {
     from {
         rotate: 0deg;
