@@ -31,7 +31,7 @@ const Header = () => {
           </svg>
         </a>
         <button className="toggle_button" onClick={() => setToggle(!toggle)}>
-          {toggle ? <CgClose size={30} /> : <GiHamburgerMenu size={30} />}
+          {toggle ? <CgClose size={30} className="icons"/> : <GiHamburgerMenu size={30} className="icons"/>}
         </button>
         {toggle ? (
           <div className="toggle_menu">

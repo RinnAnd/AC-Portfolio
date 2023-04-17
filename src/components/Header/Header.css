@@ -76,6 +76,16 @@
     display: none;
 }
 
+.icons {
+    color: white;
+    transition: 0.2s;
+}
+
+.icons:active {
+    color: #7a37d1;
+    transform: scale(1.2);
+}
+
 .refs {
     display: flex;
     gap: 1.4rem;
