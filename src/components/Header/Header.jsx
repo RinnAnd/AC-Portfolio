@@ -1,7 +1,12 @@
+import { useState } from "react";
 import "./Header.css";
 import { Link } from "react-scroll";
+import { GiHamburgerMenu } from "react-icons/gi";
+import { CgClose } from "react-icons/cg";
 
 const Header = () => {
+  const [toggle, setToggle] = useState(false);
+
   return (
     <div className="header_main">
       <nav className="header_nav">
@@ -25,6 +30,45 @@ const Header = () => {
             />
           </svg>
         </a>
+        <button className="toggle_button" onClick={() => setToggle(!toggle)}>
+          {toggle ? <CgClose size={30} /> : <GiHamburgerMenu size={30} />}
+        </button>
+        {toggle ? (
+          <div className="toggle_menu">
+            <Link
+              onClick={() => setToggle(false)}
+              to="about"
+              spy={true}
+              smooth={true}
+              duration={500}
+              offset={50}
+            >
+              About
+            </Link>
+            <Link
+              onClick={() => setToggle(false)}
+              to="experience"
+              spy={true}
+              smooth={true}
+              duration={900}
+              offset={-80}
+            >
+              Experience
+            </Link>
+            <Link
+              onClick={() => setToggle(false)}
+              to="contact"
+              spy={true}
+              smooth={true}
+              duration={1100}
+              offset={50}
+            >
+              Contact
+            </Link>
+          </div>
+        ) : (
+          <></>
+        )}
         <div className="refs">
           <Link to="about" spy={true} smooth={true} duration={500} offset={50}>
             About
