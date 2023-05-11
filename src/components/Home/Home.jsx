@@ -1,4 +1,5 @@
 import "./Home.css";
+import { Tooltip } from "@chakra-ui/react";
 import react from "../../assets/React_Logo.png";
 import redux from "../../assets/Redux_Logo.png";
 import node from "../../assets/Node_Logo.png";
@@ -26,12 +27,24 @@ const Home = () => {
           <h3>Tech Stack</h3>
         </div>
         <div className="stack_imgs">
-          <img src={react} alt="reactlogo" width={70} />
-          <img src={redux} alt="reduxlogo" width={70} />
-          <img src={node} alt="nodelogo" width={70} />
-          <img src={typescript} alt="tslogo" width={70} />
-          <img src={mui} alt="muilogo" width={70} />
-          <img src={socket} alt="socketlogo" width={70} />
+          <Tooltip label="React" bg='gray.300' aria-label="A tooltip">
+            <img src={react} alt="reactlogo" width={70} />
+          </Tooltip>
+          <Tooltip label="Redux Toolkit" bg='gray.300' aria-label="A tooltip">
+            <img src={redux} alt="reduxlogo" width={70} />
+          </Tooltip>
+          <Tooltip label="Node.js" bg='gray.300' aria-label="A tooltip">
+            <img src={node} alt="nodelogo" width={70} />
+          </Tooltip>
+          <Tooltip label="TypeScript" bg='gray.300' aria-label="A tooltip">
+            <img src={typescript} alt="tslogo" width={70} />
+          </Tooltip>
+          <Tooltip label="MaterialUI" bg='gray.300' aria-label="A tooltip">
+            <img src={mui} alt="muilogo" width={70} />
+          </Tooltip>
+          <Tooltip label="Socket.io" bg='gray.300' aria-label="A tooltip">
+            <img src={socket} alt="socketlogo" width={70} />
+          </Tooltip>
         </div>
       </div>
     </div>
