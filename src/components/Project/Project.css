@@ -100,6 +100,10 @@
     justify-content: center;
 }
 
+.text_info p {    
+    color: #D8C0F9;
+}
+
 .demo_info {
     width: 100%;
 }

@@ -1,123 +1,138 @@
 .home_main {
-    position: relative;
-    padding: 4rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 1rem;
-    min-height: 30rem;
-    justify-content: center;
-    margin-top: 8rem;
+  position: relative;
+  padding: 4rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  min-height: 30rem;
+  justify-content: center;
+  margin-top: 8rem;
 }
 
 .information_home {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    max-width: 60rem;
-    gap: 1rem;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  max-width: 60rem;
+  gap: 1rem;
 }
 
 .information_left {
-    display: flex;
-    width: 100%;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.information_left a {
+  padding: 0.5rem;
+  border-radius: 10px;
+  border: none;
+  margin-top: 1rem;
+  background: blueviolet;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.information_left a:hover {
+  background: rgb(171, 82, 255);
+  box-shadow: 0 0 20px #ca61ff;
+  color: white;
 }
 
 .image {
-    width: 15rem;
-    aspect-ratio: 1;
-    background-image: url('../../assets/one.jfif');
-    background-size: cover;
-    border-radius: 20%;
-    border: solid 1px white;
-    animation: distortion 10s infinite;
-    rotate: 10deg;
-    margin: 1rem;
+  width: 15rem;
+  aspect-ratio: 1;
+  background-image: url("../../assets/one.jfif");
+  background-size: cover;
+  border-radius: 20%;
+  border: solid 1px white;
+  animation: distortion 10s infinite;
+  rotate: 10deg;
+  margin: 1rem;
 }
 
 @keyframes distortion {
-    0% {
-        border-radius: 20%;
-    }
-    50% {
-        border-radius: 45%;
-    }
-    100% {
-        border-radius: 20%;
-    }
+  0% {
+    border-radius: 20%;
+  }
+  50% {
+    border-radius: 45%;
+  }
+  100% {
+    border-radius: 20%;
+  }
 }
 
 .information_right {
-    display: flex;
-    width: 100%;
-    justify-content: center;
+  display: flex;
+  width: 100%;
+  justify-content: center;
 }
 
 .tech_stack {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    max-width: 60rem;
-    border-right: solid 1px white;
-    width: fit-content;
-    padding: 1rem;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  max-width: 60rem;
+  border-right: solid 1px white;
+  width: fit-content;
+  padding: 1rem;
 }
 
 .stack_box {
-    display: flex;
-    gap: 1rem;
-    margin-top: 10rem;
+  display: flex;
+  gap: 1rem;
+  margin-top: 10rem;
 }
 
 .stack_imgs {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 0.5rem;
-    width: 100%;
-    flex-wrap: wrap;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  width: 100%;
+  flex-wrap: wrap;
 }
 
 .stack_imgs img {
-    border-radius: 50%;
-    background-color: var(--main);
-    padding: 0.5rem;
-    aspect-ratio: 1;
-    object-fit: contain;
+  border-radius: 50%;
+  background-color: var(--main);
+  padding: 0.5rem;
+  aspect-ratio: 1;
+  object-fit: contain;
 }
 
 .stack_imgs img:hover {
-    transform: scale(1.02);
+  transform: scale(1.02);
 }
 
 h1 {
-    font-size: clamp(2.2rem, 3vw, 3.1rem);
-    margin-bottom: 1rem;
+  font-size: clamp(2.2rem, 3vw, 3.1rem);
+  margin-bottom: 1rem;
 }
 
 h4 {
-    color: var(--basegray);
+  color: var(--basegray);
 }
 
 @media screen and (max-width: 900px) {
-    .home_main {
-        margin-top: 2rem;
-    }
-    .information_home {
-        flex-direction: column-reverse;
-        text-align: center;
-    }
-    .tech_stack {
-        border-right: none;
-        border-bottom: solid 1px white;
-    }
-    .stack_box {
-        flex-direction: column;
-        align-items: center;
-        margin-top: 4rem;
-    }
-    
+  .home_main {
+    margin-top: 2rem;
+  }
+  .information_home {
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+  .tech_stack {
+    border-right: none;
+    border-bottom: solid 1px white;
+  }
+  .stack_box {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 4rem;
+  }
 }

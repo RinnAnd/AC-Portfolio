@@ -17,6 +17,9 @@ const Home = () => {
             Hi! I'm Andrés Casas, a very passionate developer located in
             Colombia
           </h4>
+          <a href="https://wa.me/573195946602" target="_blank">
+            Contact me here
+          </a>
         </div>
         <div className="information_right">
           <div className="image"></div>
@@ -27,22 +30,22 @@ const Home = () => {
           <h3>Tech Stack</h3>
         </div>
         <div className="stack_imgs">
-          <Tooltip label="React" bg='gray.300' aria-label="A tooltip">
+          <Tooltip label="React" bg="gray.300" aria-label="A tooltip">
             <img src={react} alt="reactlogo" width={70} />
           </Tooltip>
-          <Tooltip label="Redux Toolkit" bg='gray.300' aria-label="A tooltip">
+          <Tooltip label="Redux Toolkit" bg="gray.300" aria-label="A tooltip">
             <img src={redux} alt="reduxlogo" width={70} />
           </Tooltip>
-          <Tooltip label="Node.js" bg='gray.300' aria-label="A tooltip">
+          <Tooltip label="Node.js" bg="gray.300" aria-label="A tooltip">
             <img src={node} alt="nodelogo" width={70} />
           </Tooltip>
-          <Tooltip label="TypeScript" bg='gray.300' aria-label="A tooltip">
+          <Tooltip label="TypeScript" bg="gray.300" aria-label="A tooltip">
             <img src={typescript} alt="tslogo" width={70} />
           </Tooltip>
-          <Tooltip label="MaterialUI" bg='gray.300' aria-label="A tooltip">
+          <Tooltip label="MaterialUI" bg="gray.300" aria-label="A tooltip">
             <img src={mui} alt="muilogo" width={70} />
           </Tooltip>
-          <Tooltip label="Socket.io" bg='gray.300' aria-label="A tooltip">
+          <Tooltip label="Socket.io" bg="gray.300" aria-label="A tooltip">
             <img src={socket} alt="socketlogo" width={70} />
           </Tooltip>
         </div>

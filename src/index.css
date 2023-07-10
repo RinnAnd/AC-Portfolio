@@ -14,7 +14,7 @@
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
   --main: #1A0B2E;
-  --basegray: rgb(129, 129, 129);
+  --basegray: #D8C0F9;
   --text: #B46CF8;
 }
 
@@ -23,7 +23,6 @@ body {
 }
 
 #blob {
-  background-color: white;
   height: 200px;
   aspect-ratio: 1;
   position: absolute;
