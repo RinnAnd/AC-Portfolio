@@ -1,25 +1,27 @@
 import "./Home.css";
 import { Tooltip } from "@chakra-ui/react";
 import react from "../../assets/React_Logo.png";
-import redux from "../../assets/Redux_Logo.png";
+import mysql from "../../assets/MySQL_Logo.png";
 import node from "../../assets/Node_Logo.png";
 import typescript from "../../assets/TS_Logo.png";
-import mui from "../../assets/MUI_logo.png";
-import socket from "../../assets/Socket_logo.png";
+import mongo from "../../assets/Mongo_Logo.png";
+import graph from "../../assets/graphQL_logo.png";
 
 const Home = () => {
   return (
     <div className="home_main">
       <div className="information_home">
         <div className="information_left">
-          <h1>Fullstack JavaScript Developer</h1>
-          <h4>
-            Hi! I'm Andrés Casas, a very passionate developer located in
-            Colombia
-          </h4>
-          <a href="https://wa.me/573195946602" target="_blank">
-            Contact me here
-          </a>
+          <p>Hi, my name is</p>
+          <h1>Andrés Casas</h1>
+          <h5>
+            I'm a full stack developer specializing in back-end development. I
+            love bulding and designing great digital experiences. Currently I am
+            engaged in software development at{" "}
+            <a href="https://therocketcode.com/" target="_blank">
+              Rocket Code.
+            </a>
+          </h5>
         </div>
         <div className="information_right">
           <div className="image"></div>
@@ -33,8 +35,8 @@ const Home = () => {
           <Tooltip label="React" bg="gray.300" aria-label="A tooltip">
             <img src={react} alt="reactlogo" width={70} />
           </Tooltip>
-          <Tooltip label="Redux Toolkit" bg="gray.300" aria-label="A tooltip">
-            <img src={redux} alt="reduxlogo" width={70} />
+          <Tooltip label="MySQL" bg="gray.300" aria-label="A tooltip">
+            <img src={mysql} alt="reduxlogo" width={70} />
           </Tooltip>
           <Tooltip label="Node.js" bg="gray.300" aria-label="A tooltip">
             <img src={node} alt="nodelogo" width={70} />
@@ -42,11 +44,11 @@ const Home = () => {
           <Tooltip label="TypeScript" bg="gray.300" aria-label="A tooltip">
             <img src={typescript} alt="tslogo" width={70} />
           </Tooltip>
-          <Tooltip label="MaterialUI" bg="gray.300" aria-label="A tooltip">
-            <img src={mui} alt="muilogo" width={70} />
+          <Tooltip label="MongoDB" bg="gray.300" aria-label="A tooltip">
+            <img src={mongo} alt="muilogo" width={70} />
           </Tooltip>
-          <Tooltip label="Socket.io" bg="gray.300" aria-label="A tooltip">
-            <img src={socket} alt="socketlogo" width={70} />
+          <Tooltip label="GraphQL" bg="gray.300" aria-label="A tooltip">
+            <img src={graph} alt="socketlogo" width={70} />
           </Tooltip>
         </div>
       </div>
