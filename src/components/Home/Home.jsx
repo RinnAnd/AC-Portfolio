@@ -5,7 +5,7 @@ import mysql from "../../assets/MySQL_Logo.png";
 import node from "../../assets/Node_Logo.png";
 import typescript from "../../assets/TS_Logo.png";
 import mongo from "../../assets/Mongo_Logo.png";
-import graph from "../../assets/graphQL_logo.png";
+import graph from "../../assets/graphQL_Logo.png";
 
 const Home = () => {
   return (
