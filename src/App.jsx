@@ -1,33 +1,22 @@
-import Home from "./components/Home/Home";
-import Header from "./components/Header/Header";
-import About from "./components/About/About";
-import Projects from "./components/Projects/Projects";
-import Contact from "./components/Contact/Contact";
-import Socials from "./components/Socials/Socials";
-
-const blob = document.getElementById("blob");
-
-document.body.onpointermove = (event) => {
-  const { clientX, clientY } = event;
-
-  const left = clientX - document.body.scrollLeft;
-  const top = clientY - document.body.scrollTop;
-
-  blob.animate({
-    left: `${left}px`,
-    top: `${top}px`
-  }, {duration: 14000, fill: "forwards"})
-};
+import "./App.css";
+import Lumin from "./components/lumin/lumin";
+import About from "./sections/about/About";
+import Experience from "./sections/experience/Experience";
+import Main from "./sections/main/Main";
+import Projects from "./sections/projects/Projects";
 
 function App() {
   return (
-    <div>
-      <Header />
-      <Home />
-      <About />
-      <Projects />
-      <Contact />
-      <Socials />
+    <div className="main">
+      <Lumin />
+      <div className="intro">
+        <Main />
+      </div>
+      <div className="content">
+        <About />
+        <Experience />
+        <Projects />
+      </div>
     </div>
   );
 }
