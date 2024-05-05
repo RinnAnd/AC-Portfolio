@@ -41,6 +41,11 @@
   font-size: 0.9rem;
   font-weight: 700;
   color: var(--main-text);
+  transition: color 0.3s ease;
+}
+
+.card h3:hover {
+  color: var(--cta);
 }
 
 .card p {

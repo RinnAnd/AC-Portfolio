@@ -25,13 +25,13 @@ const Main = ({setLight}) => {
         <a href="#projects">Projects</a>
       </div>
       <div className="links">
-        <a href="https://github.com/RinnAnd">
+        <a target="_blank" href="https://github.com/RinnAnd">
           <Github />
         </a>
-        <a href="https://www.linkedin.com/in/andrescasas11/">
+        <a target="_blank" href="https://www.linkedin.com/in/andrescasas11/">
           <LinkedIn />
         </a>
-        <a href="https://www.instagram.com/andres.jsx/">
+        <a target="_blank" href="https://www.instagram.com/andres.jsx/">
           <Instagram />
         </a>
       </div>
