@@ -1,0 +1,49 @@
+#experience {
+  display: flex;
+  flex-direction: column;
+  padding-top: 6rem;
+  width: 100%;
+  gap: 2rem;
+}
+
+#experience h2 {
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--main-text);
+}
+
+.jobs {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.exp {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.from {
+  color: rgb(115, 90, 133);
+  font-size: 0.85rem;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  width: 70%;  
+  gap: 0.5rem;
+}
+
+.card h3 {
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: var(--main-text);
+}
+
+.card p {
+  font-size: 0.9rem;
+  line-height: 1.5;
+}

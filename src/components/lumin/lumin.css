@@ -1,0 +1,25 @@
+.lumin {
+  position: fixed;
+  width: 50%;
+  height: 50%;
+  border-radius: 50%;
+  background-color: #7e3cd4a4;
+  filter: blur(180px);
+  z-index: -1;
+}
+
+.top-left {  
+  transform: translateX(-50%) translateY(-50%);
+}
+
+.top-right {
+  transform: translateX(80%) translateY(-50%);
+}
+
+.bottom-left {
+  transform: translateX(-50%) translateY(90%);
+}
+
+.bottom-right {
+  transform: translateX(100%) translateY(100%);
+}

@@ -1,0 +1,93 @@
+#projects {
+  display: flex;
+  flex-direction: column;
+  padding-top: 5rem;
+  margin-top: -5rem;
+  gap: 2rem;
+}
+
+#projects h2 {
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--main-text);
+}
+
+#projects h2 span {
+  color: var(--p-text);
+  font-size: 0.7rem;
+  font-weight: 300;
+}
+
+.projects {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.project {
+  display: flex;
+  flex-direction: row;
+  gap: 0.5rem;
+  justify-content: space-between;
+  padding: 1rem 0.5rem;
+  transition: ease-in-out 0.2s;
+  border: solid 1px transparent;
+  cursor: pointer;
+}
+
+.project:hover {
+  background-color: #26153f5f;
+  border-radius: 8px;
+  border-top: solid 1px #33165f;
+}
+
+.card a h3 {
+  transition: ease-in-out 0.2s;
+}
+
+.project:hover .card a h3 {
+  color: var(--cta);
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  gap: 0.5rem;
+}
+
+.card a {
+  text-decoration: none;
+}
+
+.card p {
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+.project img {
+  width: 120px;
+  height: 75px;
+  aspect-ratio: 4/1;
+  object-fit: cover;
+  border-radius: 5px;
+  border: 2px transparent solid;
+}
+
+.project img:hover {
+  border: 2px var(--cta) solid;
+}
+
+.tech {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+}
+
+.tech span {
+  font-size: 0.8rem;
+  color: var(--cta);
+  background-color: var(--dark);
+  padding: 0.2rem 0.5rem;
+  border-radius: 0.5rem;
+}
