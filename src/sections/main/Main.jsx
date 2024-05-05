@@ -1,7 +1,12 @@
-import { Github, Instagram, LinkedIn } from "../../components/Icons/Icons";
+import {
+  Github,
+  Instagram,
+  LightMode,
+  LinkedIn,
+} from "../../components/Icons/Icons";
 import "./Main.css";
 
-const Main = () => {
+const Main = ({setLight}) => {
   return (
     <div className="main-section">
       <div>
@@ -10,6 +15,9 @@ const Main = () => {
         <p>
           Fueling your apps and webistes. Working the magic behind the scenes.
         </p>
+        <div className="lightmode" onClick={() => setLight()}>
+          <LightMode />
+        </div>
       </div>
       <div className="tags">
         <a href="#about-main">About</a>
