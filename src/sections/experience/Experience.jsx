@@ -26,7 +26,14 @@ const Experience = () => {
       <h2>EXPERIENCE</h2>
       <div className="jobs">
         <Exp
-          duration="2023 — Present"
+          duration="2025 — present"
+          position="Golang Developer"
+          company="Amaris Consulting"
+          anchor="https://amaris.com/"
+          description="Backend engineer working on banking APIs working with event driven and hexagonal architecture"
+        />
+        <Exp
+          duration="2023 — 2025"
           position="Fullstack/Backend Developer"
           company="The Rocket Code"
           anchor="https://therocketcode.com/"
