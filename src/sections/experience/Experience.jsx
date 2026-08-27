@@ -33,7 +33,7 @@ const Experience = () => {
           description="Backend engineer working on banking APIs working with event driven and hexagonal architecture"
         />
         <Exp
-          duration="2023 — 2025"
+          duration="2022 — 2025"
           position="Fullstack/Backend Developer"
           company="The Rocket Code"
           anchor="https://therocketcode.com/"
